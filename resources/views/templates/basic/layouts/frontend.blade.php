@@ -32,7 +32,7 @@
 
     <link rel="stylesheet" href="{{ asset($activeTemplateTrue . 'css/bootstrap-fileinput.css') }}">
 
-    
+
     <style>
         body {
             min-height: calc(100vh + 30px);
@@ -44,9 +44,29 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet">
-        
+
         <style>
             * {
+                font-family: 'Almarai', sans-serif !important;
+            }
+
+            a {
+                font-family: 'Almarai', sans-serif !important;
+            }
+
+            button.btn--base.btn-md.my-2.acceptPolicy {
+                font-family: 'Almarai', sans-serif !important;
+            }
+
+            h2.section-title {
+                font-family: 'Almarai', sans-serif !important;
+            }
+
+            h3.widget-title {
+                font-family: 'Almarai', sans-serif !important;
+            }
+
+            h2.title {
                 font-family: 'Almarai', sans-serif !important;
             }
 
@@ -191,17 +211,17 @@
             </div>
         </header>
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        End Header
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            End Header
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        Start Scroll-To-Top
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            Start Scroll-To-Top
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <a href="#" class="scrollToTop"><i class="las la-angle-double-up"></i></a>
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        End Scroll-To-Top
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            End Scroll-To-Top
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
         @yield('content')
 
@@ -217,8 +237,8 @@
         @endphp
 
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        Start Footer
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            Start Footer
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <footer class="footer-section footer pt-80 bg-overlay-black bg_img @if (request()->routeIs('home') || request()->routeIs('category') || request()->routeIs('subCategory') || request()->routeIs('search')) d-none @endif"
             data-background="{{ getImage('assets/images/frontend/footer/' . @$footer_content->data_values->background_image, '1920x789') }}">
             <div class="container">
@@ -316,8 +336,8 @@
             </div>
         </footer>
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        End Footer
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            End Footer
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 
         @php
