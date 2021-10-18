@@ -32,6 +32,15 @@ class Handler extends ExceptionHandler
      *
      * @return void
      */
+
+
+
+    public function report(Throwable $exception)
+    {
+        dd($exception);
+        parent::report($exception);
+    }
+
     public function register()
     {
         $this->reportable(function (Throwable $e) {
