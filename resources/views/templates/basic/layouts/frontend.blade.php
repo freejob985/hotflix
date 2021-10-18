@@ -47,7 +47,7 @@
         
         <style>
             * {
-                font-family: 'Almarai', sans-serif;
+                font-family: 'Almarai', sans-serif !important;
             }
 
         </style>
