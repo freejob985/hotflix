@@ -46,8 +46,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet">
 
         <style>
-          
-
             a {
                 font-family: 'Almarai', sans-serif !important;
             }
@@ -65,6 +63,18 @@
             }
 
             h2.title {
+                font-family: 'Almarai', sans-serif !important;
+            }
+
+            input[type="email"] {
+                font-family: 'Almarai', sans-serif !important;
+            }
+
+            p {
+                font-family: 'Almarai', sans-serif !important;
+            }
+
+            span.movie-badge {
                 font-family: 'Almarai', sans-serif !important;
             }
 
@@ -209,17 +219,17 @@
             </div>
         </header>
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            End Header
-        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                End Header
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            Start Scroll-To-Top
-        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                Start Scroll-To-Top
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <a href="#" class="scrollToTop"><i class="las la-angle-double-up"></i></a>
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            End Scroll-To-Top
-        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                End Scroll-To-Top
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
         @yield('content')
 
@@ -235,8 +245,8 @@
         @endphp
 
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            Start Footer
-        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                Start Footer
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <footer class="footer-section footer pt-80 bg-overlay-black bg_img @if (request()->routeIs('home') || request()->routeIs('category') || request()->routeIs('subCategory') || request()->routeIs('search')) d-none @endif"
             data-background="{{ getImage('assets/images/frontend/footer/' . @$footer_content->data_values->background_image, '1920x789') }}">
             <div class="container">
@@ -334,8 +344,8 @@
             </div>
         </footer>
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            End Footer
-        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                End Footer
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 
         @php
