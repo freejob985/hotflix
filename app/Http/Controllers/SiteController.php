@@ -21,7 +21,7 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
-
+use Session;
 
 class SiteController extends Controller
 {
@@ -36,7 +36,7 @@ class SiteController extends Controller
     
           );
 
-          
+
         $count = Page::where('tempname',$this->activeTemplate)->where('slug','home')->count();
         if($count == 0){
             $page = new Page();
