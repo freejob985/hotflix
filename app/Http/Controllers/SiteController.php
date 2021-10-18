@@ -30,11 +30,7 @@ class SiteController extends Controller
     }
 
     public function index(){
-        dd(
-
-            Session::get('lang')
-    
-          );
+      
 
 
         $count = Page::where('tempname',$this->activeTemplate)->where('slug','home')->count();

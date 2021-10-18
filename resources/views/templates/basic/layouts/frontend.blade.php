@@ -38,6 +38,10 @@
             min-height: calc(100vh + 30px);
         }
     </style>
+
+    @if (Session::get('lang')=="ar")
+    @dd("Catch errors for script and full tracking ( 5)");
+    @endif
     @stack('style-lib')
 
     @stack('style')
