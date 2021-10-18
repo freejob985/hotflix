@@ -46,9 +46,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet">
 
         <style>
-            * {
-                font-family: 'Almarai', sans-serif !important;
-            }
+          
 
             a {
                 font-family: 'Almarai', sans-serif !important;
