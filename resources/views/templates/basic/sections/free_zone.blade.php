@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-xl-12">
                 <div class="section-header">
-                    <h2 class="section-title">@lang('Free Zone')</h2>
+                    <h2 class="section-title">@lang('zz')</h2>
                 </div>
             </div>
         </div>
