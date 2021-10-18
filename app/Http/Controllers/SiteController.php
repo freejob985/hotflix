@@ -30,7 +30,13 @@ class SiteController extends Controller
     }
 
     public function index(){
-        dd("Catch errors for script and full tracking ( 4 )");
+        dd(
+
+            Session::get('lang')
+    
+          );
+
+          
         $count = Page::where('tempname',$this->activeTemplate)->where('slug','home')->count();
         if($count == 0){
             $page = new Page();
